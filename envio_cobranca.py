@@ -1,7 +1,7 @@
 '''
  Este script tem como objetivo enviar mensagens automatizadas via Whatsapp
  realizando a cobrança no dia de vencimento para os clientes Gdoor
- Autor: Sanches Franklin
+ Autor: Sanches Santos
 '''
 import os
 from datetime import date
@@ -11,7 +11,7 @@ import pandas as pd
 import time
 import urllib
 
-## Importar a planilha com os dados dos clientes
+## Importar a planilha do google drive com os dados dos clientes
 
 caminhoPlanilhaDrive = "https://docs.google.com/spreadsheets/d/1y1UEGCbaJ5ImZm3w0cGiKJliKmSNp2is/export?format=xlsx"
 
