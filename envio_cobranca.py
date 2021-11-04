@@ -21,6 +21,12 @@ infoClientesPlanilha = pd.read_excel(caminhoPlanilhaDrive)
 data_atual = date.today()
 diaAtual = data_atual.day
 
+## Salvando a sessão do Whatsapp (Pra não precisar ficar scaneando QRCode)
+dir_path = os.getcwd()
+profile = os.path.join(dir_path, "profile", "wpp")
+options = webdriver.ChromeOptions()
+options.add_argument(r"user-data-dir={}".format(profile))
+
 ## Acessando WhatsappWeb
 navegador = webdriver.Chrome("./chromedriver", chrome_options=options)
 navegador.get("https://web.whatsapp.com/")
