@@ -13,7 +13,7 @@ import urllib
 
 ## Importar a planilha do google drive com os dados dos clientes
 
-caminhoPlanilhaDrive = "https://docs.google.com/spreadsheets/d/1y1UEGCbaJ5ImZm3w0cGiKJliKmSNp2is/export?format=xlsx"
+caminhoPlanilhaDrive = ${{ secrets.PATH_SPREADSHEET }}
 
 infoClientesPlanilha = pd.read_excel(caminhoPlanilhaDrive)
 
